@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="740360179991741">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="701030278852209" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="607750546511866" type="Player">
+                    <param id="0" name="X">Player.X +64</param>
+                    <param id="1" name="Y">Player.Y</param>
+                </action>
+                <action id="4" name="Set animation" sid="803684250930507" type="Player">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="290881778519388">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="613166215595347" type="Player">
+                            <param id="0" name="Object">wall</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="723830971762260" type="Player">
+                            <param id="0" name="X">Player.X - 64</param>
+                            <param id="1" name="Y">Player.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="611679834299616">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="398912502038902" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="112544023667412" type="Player">
+                    <param id="0" name="X">Player.X -64</param>
+                    <param id="1" name="Y">Player.Y</param>
+                </action>
+                <action id="4" name="Set animation" sid="236354969441868" type="Player">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="701728678179688">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="991941770760671" type="Player">
+                            <param id="0" name="Object">wall</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="286687808571862" type="Player">
+                            <param id="0" name="X">Player.X + 64</param>
+                            <param id="1" name="Y">Player.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="689791503176731">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="487370768854401" type="Keyboard">
+                    <param id="0" name="Key">87</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="811472506527717" type="Player">
+                    <param id="0" name="X">Player.X </param>
+                    <param id="1" name="Y">Player.Y - 64</param>
+                </action>
+                <action id="4" name="Set animation" sid="815069695806248" type="Player">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="496137165380916">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="107897146397472" type="Player">
+                            <param id="0" name="Object">wall</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="425969128352438" type="Player">
+                            <param id="0" name="X">Player.X </param>
+                            <param id="1" name="Y">Player.Y + 64</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="416477044317329">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="268148370416492" type="Keyboard">
+                    <param id="0" name="Key">83</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="330164633375658" type="Player">
+                    <param id="0" name="X">Player.X </param>
+                    <param id="1" name="Y">Player.Y + 64</param>
+                </action>
+                <action id="4" name="Set animation" sid="788554702633719" type="Player">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block any="1" sid="839912561005426">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="867812039332948" type="Player">
+                            <param id="0" name="Object">wall</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="102251576057242" type="Player">
+                            <param id="0" name="X">Player.X </param>
+                            <param id="1" name="Y">Player.Y - 64</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="683520353831091">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="137999917365797" type="System">
+                    <param id="0" name="Interval (seconds)">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="280547740802333" type="Player">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
